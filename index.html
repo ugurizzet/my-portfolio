@@ -1,38 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ugur izzet onal</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="sidebar">
-        <header>my app</header>
-        <ul>
-            <li><a href="#">about</a></li>
-            <li><a href="#">my skılls</a></li>
-            <li><a href="#">work</a></li>
-            <li><a href="#">contact</a></li>
-            <li><a href="#">blog</a></li>
-        </ul>
-    </div>
-    <div class="container">
-         
-        <div class="about">
-            <div id="first-heading">
-                <h1>merhaba <br> ben izzet <br> ben web yazilimcisiyim</h1>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal project website design</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!---header--->
+    <header>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+
+    <!---home--->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h4>Hello</h4>
+        <h1>
+          I'M Ugur <br />
+          Iz<span>zet</span>
+        </h1>
+        <h3>I'am a Front End Developer</h3>
+        <a href="#" class="btn">Hire Me</a>
+      </div>
+    </section>
+
+    <!---about--->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="about.jpg" alt="">
+      </div>
+
+      <div class="about-text">
+        <h2>About Me</h2>
+        <h4>Hi, Im Here To Help Your Next Project</h4>
+        <p>
+            I am curious Front-End Developer, interested in writing new codes, skilled at developing complex solution, possessing strong creative thinking skills, high energy and integrity. I have ability to create algorithms effectively, interact positively and communicate appropriately with team members. I am quick to grasp new technologies and concepts to develop innovative and creative solutions to problems. Always eager to learn various technologies, tools and libraries. Especially interested in the Front end/Web Development, HTML, CSS, JS, React. I have teamwork skills. I'm good at problem solving. I am excited to learn new things and improve myself. You can review my projects on my GitHub account
+        </p>
+        <div class="about-gri">
+          <div class="about-in">
+            <h5>1. Problem Solving</h5>
+          </div>
+
+          <div class="about-in">
+            <h5>2. Creative Idea</h5>
+          </div>
+
+          <div class="about-in">
+            <h5>3. Search a lot</h5>
+          </div>
+
+          <div class="about-in">
+            <h5>4. High Quality</h5>
+          </div>
+        </div>
+        <a href="#" class="btn">Contact Me</a>
+      </div>
+    </section>
+
+    <!---project--->
+    <section class="project" id="project">
+      <div class="main-text">
+        <h2>My Project</h2>
+        <h4>Some Of My Distinguished Works</h4>
+      </div>
+
+      <div class="project-content">
+        <div class="row">
+          <a href="https://ugurizzet.github.io/Parallax-Website/"  target="_blank"><img src="paralax.png" /></a>
+          <div class="main-row">
+            <div class="row-text">
+              <h6>Parallax Website</h6>
             </div>
+            <div class="row-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+          </div>
+          <h3>Site designed for the user and intended to convey small information about the company. I used HTML and CSS while making this website</h3>
         </div>
-        <div>
-            <h3>my portfolio</h3>
-            <p>iste boyle aynen oyle aglasna fener falan filan intermilan naber kocum yardimlazim mi sen kimsin ki bana kafa tutuyon kardes ben senin gibileri cok gordum falan filan <a href="#">bu bir site</a>fan filan falan filan</p>
+
+        <div class="row">
+          <a href=https://ugurizzet.github.io/Netflixpage/" target="_blank"><img src="Netflix.png" /></a>
+          <div class="main-row">
+            <div class="row-text">
+              <h6>NetFlix</h6>
+            </div>
+            <div class="row-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+          </div>
+          <h3>A form page prepared to collect data on what users think about the site and what they like more. I used HTML and CSS while making this website</h3>
         </div>
-        <hr>
-        <div>3</div><hr>
-        <div>4</div><hr>
-        <div>5</div><hr>
-        <div>6</div><hr>
-</body>
+
+        <div class="row">
+          <a href="https://ugurizzet.github.io/VoltranClub/" target="_blank"><img src="voltran.png"/></a>
+          <div class="main-row">
+            <div class="row-text">
+              <h6>Development</h6>
+            </div>
+            <div class="row-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+          </div>
+          <h4>Voltran Club, which I designed for the fan base, is a forum page where people can find articles about the series and follow the series actively. I used HTML and CSS while making this website</h4>
+        </div>
+
+        <div class="row">
+          <a href="https://ugurizzet.github.io/Biography-Website/" target="_blank"><img src="bio.png" /></a>
+          <div class="main-row">
+            <div class="row-text">
+              <h6>Development</h6>
+            </div>
+            <div class="row-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+          </div>
+          <h3>A biography page that contains little information about famous people and allows the user to get an idea in a short time. I used HTML and CSS while making this website</h3>
+        </div>
+
+        <div class="row">
+          <img src="maintenance.png" />
+          <div class="main-row">
+            <div class="row-text">
+              <h6>In Maintenance</h6>
+            </div>
+            <div class="row-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+          </div>
+          <h3>very soon</h3>
+        </div>
+
+        <div class="row">
+          <img src="maintenance.png" />
+          <div class="main-row">
+            <div class="row-text">
+              <h6>In Maintenance</h6>
+            </div>
+            <div class="row-icon">
+              <i class="bx bx-heart"></i>
+            </div>
+          </div>
+          <h3>very soon</h3>
+        </div>
+      </div>
+    </section>
+
+    <!---contact--->
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <h2>Contact Me</h2>
+        <h4>Let's Work Together</h4>
+
+        <div class="contact-list">
+          <li><a href="#">Ugur Izzet Onal</a></li>
+          <li><a href="#">izzetonal46@gmail.com</a></li>
+          <li><a href="#">Warszawa, Poland</a></li>
+        </div>
+        <div class="contact-icons">
+          <a href="https://www.linkedin.com/in/ugur-izzet-onal/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form action="">
+          <input type="" placeholder="Enter Your Name" required />
+          <input type="email" placeholder="Enter Your Email" required />
+          <input type="" placeholder="Enter Your Subject" />
+          <textarea
+            name=""
+            id=""
+            cols="40"
+            rows="10"
+            placeholder="Enter Your Message"
+            required
+          ></textarea>
+          <input type="submit" value="Submit" class="send" />
+        </form>
+      </div>
+    </section>
+
+    <!---scroll-top--->
+    <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+    <!---custom js link--->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
