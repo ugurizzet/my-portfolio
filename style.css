@@ -86,8 +86,8 @@ span {
 }
 .home-text h4 {
   color: var(--main-color);
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 48px;
+  font-weight: 800;
 }
 .home-text h3 {
   font-size: 24px;
@@ -218,8 +218,8 @@ header.sticky {
 .contact-text h4 {
   margin: 15px 0;
   color: var(--main-color);
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 40px;
+  font-weight: 800;
 }
 .contact-text h2 {
   font-size: var(--h2-font);
@@ -381,4 +381,58 @@ form textarea {
     --h1-font: 3.7rem;
     --h2-font: 2.7rem;
   }
+}
+.wrapper{
+  display: flex;
+}
+.wrapper .static-txt{
+  color: var(--text-color);
+  font-size: 40px;
+  font-weight: 700;
+}
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 50px;
+  overflow: hidden;
+}
+.dynamic-txts{
+  list-style: none;
+  color: aquamarine;
+  font-size: 40px;
+  position: relative;
+}
+.dynamic-txts li::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-left: 2px solid var(--second-color);
+  animation: typing 3s steps(10)
+  infinite;
+}
+.dynamic-txts li{
+  position: relative;
+  font-weight: 800;
+  top: 0;
+  animation: slide 6s steps(2)
+  infinite;
+}
+@keyframes slide{
+  100% {
+      top: -100px;
+  }
+}
+@keyframes typing{
+  40%,
+  60% {
+      left: calc(100% + 30px)
+  }
+  100%{
+      left: 0;
+  }
+}
+#hire-me{
+   margin-top: 10px;
 }
